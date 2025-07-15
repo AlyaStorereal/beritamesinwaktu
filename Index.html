@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita Viral | BERITA MESIN WAKTU</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            width: 85%;
+            margin: auto;
+            overflow: hidden;
+        }
+        
+        nav {
+            background-color: #34495e;
+            color: white;
+        }
+        
+        nav ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav li {
+            padding: 1rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+        
+        nav a:hover {
+            color: #f39c12;
+        }
+        
+        .timeline-header {
+            text-align: center;
+            margin: 2rem 0;
+            position: relative;
+        }
+        
+        .timeline-header h2 {
+            display: inline-block;
+            background: #f5f5f5;
+            padding: 0 1rem;
+            position: relative;
+            z-index: 1;
+            font-size: 1.8rem;
+            color: #2c3e50;
+        }
+        
+        .timeline-header:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: #ddd;
+            z-index: 0;
+        }
+        
+        .main-news {
+            background-color: white;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-left: 4px solid #f39c12;
+        }
+        
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .news-card {
+            background-color: white;
+            padding: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .news-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        
+        .news-card h3 {
+            margin-top: 0.5rem;
+            color: #2c3e50;
+        }
+        
+        .news-date {
+            color: #7f8c8d;
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        
+        .year-2024 { border-left-color: #f39c12; }
+        .year-2025 { border-left-color: #3498db; }
+        .year-2026 { border-left-color: #2ecc71; }
+        .year-2027 { border-left-color: #9b59b6; }
+        .year-2028 { border-left-color: #e67e22; }
+        .year-2029 { border-left-color: #1abc9c; }
+        .year-2030 { border-left-color: #e74c3c; }
+        
+        .news-tag {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            background: #f39c12;
+            color: white;
+            border-radius: 3px;
+            font-size: 0.7rem;
+            margin-right: 0.5rem;
+        }
+        
+        .tech { background: #3498db; }
+        .sport { background: #2ecc71; }
+        .health { background: #e74c3c; }
+        .politics { background: #9b59b6; }
+        .entertainment { background: #1abc9c; }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>BERITA MESIN WAKTU</h1>
+            <p>Kumpulan berita viral dari 2024 sampe 2030</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Politik</a></li>
+                <li><a href="#">Hiburan</a></li>
+                <li><a href="#">Teknologi</a></li>
+                <li><a href="#">Olahraga</a></li>
+                <li><a href="#">Kesehatan</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <!-- BERITA 2024 -->
+        <div class="timeline-header">
+            <h2>2024</h2>
+        </div>
+        
+        <section class="main-news year-2024">
+            <h2>Viral! Penemuan Arkeologi Mengejutkan di Jawa Tengah</h2>
+            <p class="news-date">5 Juli 2024 | <span class="news-tag">Sejarah</span></p>
+            <img src="https://via.placeholder.com/800x400?text=Penemuan+Arkeologi+2024" alt="Penemuan Arkeologi">
+            <p>Tim arkeolog dari Universitas Indonesia menemukan struktur kuno yang diduga merupakan peninggalan kerajaan Mataram Kuno di wilayah Jawa Tengah. Penemuan ini menjadi viral setelah salah satu anggota tim membagikan foto artefak yang ditemukan melalui media sosial.</p>
+            <p>"Struktur ini sangat terawat dengan baik dan kami menemukan beberapa artefak yang mungkin bisa mengubah pemahaman kita tentang peradaban kuno di Jawa," ujar Dr. Ananda Putra, ketua tim penelitian.</p>
+            <p>Penemuan ini telah menarik perhatian internasional dengan banyak ahli dari luar negeri yang ingin bergabung dalam penelitian lebih lanjut.</p>
+        </section>
+        
+        <div class="news-grid">
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x200?text=Kontroversi+Artis+2024" alt="Kontroversi Artis">
+                <p class="news-date">3 Juli 2024 | <span class="news-tag entertainment">Hiburan</span></p>
+                <h3>Kontroversi Artis A yang Diduga Menghina Budaya Daerah</h3>
+                <p>Seorang artis terkenal menjadi sorotan setelah video yang diduga mengandung penghinaan terhadap budaya daerah tertentu beredar luas di media sosial...</p>
+                <a href="#">Baca selengkapnya →</a>
+            </article>
+            
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x200?text=Teknologi+Baru+2024" alt="Teknologi Baru">
+                <p class="news-date">1 Juli 2024 | <span class="news-tag tech">Teknologi</span></p>
+                <h3>Startup Lokal Luncurkan Teknologi AI yang Menghebohkan</h3>
+                <p>Sebuah startup asal Indonesia berhasil mengembangkan teknologi kecerdasan buatan yang diklaim mampu memahami bahasa daerah dengan akurasi tinggi...</p>
+                <a href="#">Baca selengkapnya →</a>
+            </article>
+        </div>
+        
+        <!-- BERITA 2025 -->
+        <div class="timeline-header">
+            <h2>2025</h2>
+        </div>
+        
+        <section class="main-news year-2025">
+            <h2>Indonesia Resmi Luncurkan Mobil Listrik Nasional dengan Teknologi Autonomous</h2>
+            <p class="news-date">15 Maret 2025 | <span class="news-tag tech">Teknologi</span></p>
+            <img src="https://via.placeholder.com/800x400?text=Mobil+Listrik+Nasional+2025" alt="Mobil Listrik Nasional">
+            <p>Presiden Joko Widodo secara resmi meluncurkan mobil listrik nasional pertama Indonesia yang telah dilengkapi dengan teknologi autonomous level 4. Mobil bernama "GARUDA EV" ini diklaim mampu bersaing dengan produk-produk global.</p>
+            <p>"Ini adalah bukti bahwa bangsa Indonesia mampu berinovasi dan tidak hanya menjadi konsumen teknologi," ujar Presiden dalam pidatonya. Harga mobil ini dipatok mulai dari Rp 350 juta dengan subsidi pemerintah sebesar 20% untuk pembelian pertama.</p>
+            <p>Peluncuran ini langsung viral di media sosial dengan tagar #GarudaEV menjadi trending topic selama 3 hari berturut-turut.</p>
+        </section>
+        
+        <div class="news-grid">
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x200?text=Olahraga+2025" alt="Olahraga">
+                <p class="news-date">10 Februari 2025 | <span class="news-tag sport">Olahraga</span></p>
+                <h3>Timnas Indonesia U-23 Juara Piala Asia, Trending di Twitter Global</h3>
+                <p>Untuk pertama kalinya dalam sejarah, timnas Indonesia U-23 berhasil menjadi juara Piala Asia setelah mengalahkan Jepang dengan skor 2-1 di final...</p>
+                <a href="#">Baca selengkapnya →</a>
+            </article>
+            
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x200?text=Kesehatan+2025" alt="Kesehatan">
+                <p class="news-date">5 Januari 2025 | <span class="news-tag health">Kesehatan</span></p>
+                <h3>Peneliti Indonesia Temukan Vaksin Universal untuk Virus Corona</h3>
+                <p>Tim peneliti dari Universitas Gadjah Mada berhasil mengembangkan vaksin universal yang efektif melawan semua varian virus corona, termasuk mutasi baru...</p>
+                <a href="#">Baca selengkapnya →</a>
+            </article>
+        </div>
+        
+        <!-- BERITA 2026 -->
+        <div class="timeline-header">
+            <h2>2026</h2>
+        </div>
+        
+        <section class="main-news year-2026">
+            <h2>Pemerintah Resmi Pindahkan Ibu Kota ke Nusantara, Upacara Megah Jadi Sorotan Dunia</h2>
+            <p class="news-date">17 Agustus 2026 | <span class="news-tag politics">Politik</span></p>
+            <img src="https://via.placeholder.com/800x400?text=Ibu+Kota+Baru+2026" alt="Ibu Kota Baru">
+            <p>Setelah melalui proses panjang, Indonesia akhirnya secara resmi memindahkan ibu kota dari Jakarta ke Nusantara di Kalimantan Timur. Upacara pemindahan yang megah dihadiri oleh berbagai pemimpin dunia dan menjadi trending global di berbagai platform media sosial.</p>
+            <p>"Ini adalah babak baru dalam sejarah bangsa Indonesia. Nusantara akan menjadi kota masa depan yang berkelanjutan dan inklusif," ucap Presiden dalam pidato kenegaraan.</p>
+            <p>Perpindahan ini juga memecahkan rekor dunia untuk upacara kenegaraan dengan streaming langsung terbanyak, mencapai 50 juta penonton simultan.</p>
+        </section>
+        
+        <div class="news-grid">
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x200?text=Ekonomi+2026" alt="Ekonomi">
+                <p class="news-date">12 Juli 2026 | <span class="news-tag">Ekonomi</span></p>
+                <h3>Rupiah Resmi Masuk Daftar Mata Uang Digital Bank Dunia</h3>
+                <p>Bank Dunia secara resmi memasukkan Rupiah digital sebagai salah satu mata uang digital yang diakui untuk transaksi internasional...</p>
+                <a href="#">Baca selengkapnya →</a>
+            </article>
+            
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x200?text=Hiburan+2026" alt="Hiburan">
+                <p class="news-date">5 Juni 2026 | <span class="news-tag entertainment">Hiburan</span></p>
+                <h3>Film "Bumi Manusia 2" Raih Penghargaan di Festival Cannes</h3>
+                <p>Film karya anak bangsa kembali menorehkan prestasi di kancah internasional dengan meraih Palme d'Or di Festival Film Cannes...</p>
+                <a href="#">Baca selengkapnya →</a>
+            </article>
+        </div>
+        
+        <!-- BERITA 2027 -->
+        <div class="timeline-header">
+            <h2>2027</h2>
+        </div>
+        
+        <section class="main-news year-2027">
+            <h2>TransJakarta Jadi Sistem BRT Terbaik di Dunia, Transportasi Umum Gratis untuk Warga</h2>
+            <p class="news-date">22 September 2027 | <span class="news-tag">Infrastruktur</span></p>
+            <img src="https://via.placeholder.com/800x400?text=TransJakarta+2027" alt="TransJakarta">
+            <p>Badan Transportasi Dunia menganugerahkan penghargaan "Best BRT System" kepada TransJakarta setelah melalui berbagai pembenahan selama 3 tahun terakhir. Sistem transportasi ini kini melayani 5 juta penumpang sehari dengan tingkat kepuasan 98%.</p>
+            <p>"Mulai hari ini, seluruh warga Jakarta bisa menggunakan transportasi umum secara gratis dengan menunjukkan KTP elektronik," ujar Gubernur Jakarta dalam konferensi pers. Kebijakan ini langsung viral dengan tagar #JakartaGratisMudik trending di Twitter.</p>
+            <p>TransJakarta juga menjadi sistem BRT pertama di dunia yang sepenuhnya menggunakan armada listrik dan teknologi AI untuk manajemen lalu lintas.</p>
+        </section>
+        
+        <div class="news-grid">
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x200?text=Olahraga+2027" alt="Olahraga">
+                <p class="news-date">15 Agustus 2027 | <span class="news-tag sport">Olahraga</span></p>
+                <h3>Indonesia Tuan Rumah Piala Dunia U-20, Siapkan 8 Stadion Canggih</h3>
+                <p>Untuk pertama kalinya, Indonesia terpilih menjadi tuan rumah Piala Dunia U-20 FIFA 2027. Persiapan telah dimulai dengan pembangunan dan renovasi 8 stadion berteknologi tinggi...</p>
+                <a href="#">Baca selengkapnya →</a>
+            </article>
+            
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x200?text=Kesehatan+2027" alt="Kesehatan">
+                <p class="news-date">3 Juli 2027 | <span class="news-tag health">Kesehatan</span></p>
+                <h3>RS di Indonesia Gunakan Robot Dokter untuk Operasi Rutin</h3>
+                <p>Rumah Sakit Umum Pusat Nasional menjadi rumah sakit pertama di Asia Tenggara yang menggunakan robot dokter untuk melakukan operasi rutin dengan presisi nano...</p>
+                <a href="#">Baca selengkapnya →</a>
+            </article>
+        </div>
+        
+        <!-- BERITA 2028 -->
+        <div class="timeline-header">
+            <h2>2028</h2>
+        </div>
+        
+        <section class="main-news year-2028">
+            <h2>Pesawat N219 Nusantara Explorer Resmi Melayani Rute Antar Benua</h2>
+            <p class="news-date">10 November 2028 | <span class="news-tag tech">Teknologi</span></p>
+            <img src="https://via.placeholder.com/800x400?text=Pesawat+N219+2028" alt="Pesawat N219">
+            <p>PT Dirgantara Indonesia secara resmi meluncurkan layanan penerbangan komersial antar benua menggunakan pesawat N219 Nusantara Explorer. Pesawat buatan dalam negeri ini mampu mengangkut 120 penumpang dengan jarak tempuh 8.000 km.</p>
+            <p>"Ini adalah kebanggaan bangsa. Untuk pertama kalinya pesawat komersial buatan Indonesia melayani rute Jakarta-London dan Jakarta-Tokyo," ujar Menteri BUMN. Video uji coba pesawat ini viral dengan 10 juta views dalam 24 jam.</p>
+            <p>N219 Nusantara Explorer telah mendapatkan sertifikasi FAA (Federal Aviation Administration) dan EASA (European Union Aviation Safety Agency).</p>
+        </section>
+        
+        <div class="news-grid">
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x200?text=Pendidikan+2028" alt="Pendidikan">
+                <p class="news-date">5 Oktober 2028 | <span class="news-tag">Pendidikan</span></p>
+                <h3>Sekolah di Indonesia Terapkan Kurikulum Metaverse Pertama di Dunia</h3>
+                <p>Kementerian Pendidikan meluncurkan kurikulum berbasis metaverse pertama di dunia yang akan diterapkan di 1.000 sekolah percontohan...</p>
+                <a href="#">Baca selengkapnya →</a>
+            </article>
+            
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x200?text=Ekonomi+2028" alt="Ekonomi">
+                <p class="news-date">20 September 2028 | <span class="news-tag">Ekonomi</span></p>
+                <h3>Indonesia Masuk 5 Besar Ekonomi Digital Terbesar di Dunia</h3>
+                <p>Laporan terbaru dari McKinsey menunjukkan Indonesia telah melampaui Brazil dan Inggris dalam hal nilai transaksi ekonomi digital...</p>
+                <a href="#">Baca selengkapnya →</a>
+            </article>
+        </div>
+        
+        <!-- BERITA 2029 -->
+        <div class="timeline-header">
+            <h2>2029</h2>
+        </div>
+        
+        <section class="main-news year-2029">
+            <h2>Masyarakat Adat Indonesia Raih Penghargaan Dunia untuk Konservasi Hutan</h2>
+            <p class="news-date">5 Juni 2029 | <span class="news-tag">Lingkungan</span></p>
+            <img src="https://via.placeholder.com/800x400?text=Konservasi+Hutan+2029" alt="Konservasi Hutan">
+            <p>United Nations menganugerahkan penghargaan tertinggi bidang lingkungan kepada masyarakat adat Indonesia atas keberhasilan mereka mempertahankan dan merestorasi 2 juta hektar hutan tropis. Penghargaan ini diserahkan langsung oleh Sekjen PBB di New York.</p>
+            <p>"Ini adalah bukti bahwa kearifan lokal masyarakat adat kita sejalan dengan tujuan pembangunan berkelanjutan global," ujar Menteri Lingkungan Hidup. Video dokumenter tentang upaya konservasi ini viral dengan 50 juta views di berbagai platform.</p>
+            <p>Keberhasilan ini juga berdampak pada penurunan emisi karbon Indonesia sebesar 40% dari target Paris Agreement.</p>
+        </section>
+        
+        <div class="news-grid">
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x200?text=Kuliner+2029" alt="Kuliner">
+                <p class="news-date">15 Mei 2029 | <span class="news-tag">Kuliner</span></p>
+                <h3>Rendang Ditetapkan sebagai Warisan Kuliner Dunia oleh UNESCO</h3>
+                <p>Setelah melalui proses panjang, akhirnya UNESCO secara resmi menetapkan rendang sebagai warisan kuliner dunia yang harus dilestarikan...</p>
+                <a href="#">Baca selengkapnya →</a>
+            </article>
+            
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x200?text=Teknologi+2029" alt="Teknologi">
+                <p class="news-date">1 April 2029 | <span class="news-tag tech">Teknologi</span></p>
+                <h3>Starlink Indonesia Resmi Beroperasi, Internet 1Gbps ke Seluruh Desa</h3>
+                <p>Kerjasama pemerintah Indonesia dengan SpaceX akhirnya membuahkan hasil dengan peluncuran resmi layanan Starlink Indonesia...</p>
+                <a href="#">Baca selengkapnya →</a>
+            </article>
+        </div>
+        
+        <!-- BERITA 2030 -->
+        <div class="timeline-header">
+            <h2>2030</h2>
+        </div>
+        
+        <section class="main-news year-2030">
+            <h2>Kota Jakarta Masuk Daftar 10 Kota Paling Cerdas di Dunia</h2>
+            <p class="news-date">30 Juni 2030 | <span class="news-tag tech">Teknologi</span></p>
+            <img src="https://via.placeholder.com/800x400?text=Smart+City+Jakarta+2030" alt="Smart City Jakarta">
+            <p>Jakarta berhasil masuk dalam daftar 10 kota paling cerdas (smart city) di dunia versi IMD Smart City Index 2030, mengalahkan beberapa kota besar seperti Tokyo dan Paris. Prestasi ini membuat warganet Indonesia berbangga dan ramai membagikan foto-foto transformasi ibu kota.</p>
+            <p>"Ini adalah hasil dari kerja keras selama satu dekade terakhir. Sistem transportasi terintegrasi, manajemen sampah berbasis AI, dan pemerintahan digital menjadi kunci keberhasilan Jakarta," jelas Gubernur Jakarta dalam konferensi pers.</p>
+            <p>Jakarta menjadi satu-satunya kota di Asia Tenggara yang masuk dalam daftar ini, dengan skor tertinggi dalam kategori pemerintahan digital dan partisipasi warga.</p>
+        </section>
+        
+        <div class="news-grid">
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x200?text=Teknologi+2030" alt="Teknologi">
+                <p class="news-date">15 Mei 2030 | <span class="news-tag tech">Teknologi</span></p>
+                <h3>Quantum Computer Buatan Indonesia Dipakai NASA untuk Riset Antariksa</h3>
+                <p>Komputer kuantum buatan PT Quantum Indonesia resmi digunakan oleh NASA untuk mempercepat perhitungan dalam misi eksplorasi Mars. Teknologi ini...</p>
+                <a href="#">Baca selengkapnya →</a>
+            </article>
+            
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x200?text=Pendidikan+2030" alt="Pendidikan">
+                <p class="news-date">20 April 2030 | <span class="news-tag">Pendidikan</span></p>
+                <h3>Universitas Indonesia Masuk 50 Besar Dunia, Sistem Pendidikan RI Diakui Global</h3>
+                <p>Untuk pertama kalinya dalam sejarah, Universitas Indonesia berhasil menembus peringkat 50 besar dunia dalam QS World University Rankings 2030...</p>
+                <a href="#">Baca selengkapnya →</a>
+            </article>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy;BERITA MESIN WAKTU|KUMPULAN BERITA VIRAL DARI 2024 SAMPE 2030.</p>
+            <p>Email: beritamesinwaktu@gmail.com| ADMIN FAJAR:089508144943
+              ADMIN ALYA:088708554015
+            </p>
+        </div>
+    </footer>
+</body>
+  </html>
